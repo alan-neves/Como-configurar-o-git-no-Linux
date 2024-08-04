@@ -71,13 +71,15 @@ IMPORTANTE!
 diferente do windows, quando você instala o git no linux não aparece um programa para você utiliza-lo como o gitbash no windows, no linux você usa o próprio terminal que você usou para instalar o git.
 
 
-- 5 - Hora de configurar o programa, na documentação (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador através dos comandos:
+# Hora de configurar o programa
+
+- 5 - vamos utilizar dois comandos para cadastrar nossas credenciais do Git no computador:
 
          git config --global user.name "nome do usuário"
 
          git config --global user.email emaildousuário@exemplo.com
 
-IMPORTANTE! Atente que os dados acima precisam ser os seus!
+IMPORTANTE! Atente-se pelo fato de que os dados acima precisam ser os seus!
 Para verificar se a configuração deu certo digite:
 
       git config --list no terminal do linux
@@ -104,7 +106,7 @@ copie a chave gerada e vá até a parte superior do lado direito do github onde 
 
 - 12 - No terminal digite o comando 'git clone' acompanhado do endereço copiado. Ex.:
 
-         git clone https://github.com/davivilar/pwi-davi-vilar.git
+         git clone https://github.com/alan-neves.git
 
 - 13 - No terminal liste as pastas com o comando: 
 
@@ -112,13 +114,7 @@ copie a chave gerada e vá até a parte superior do lado direito do github onde 
 
 Verifique se seu repositório foi baixado.
 
-- 14 - No terminal você pode digitar o comando 
-
-          ls
-
-Para listar os arquivos e pastas do local que você está. Certifique-se que a pasta do seu repositório se encontra no local (ela tem o mesmo nome do seu repositório).
-
-- 15 - Visto que a pasta foi clonada (baixada) você vai acessar ela através do comando 
+- 14 - Visto que a pasta foi clonada (baixada) você vai acessar ela através do comando 
 
          cd nome-da-pasta
 
@@ -134,39 +130,39 @@ Para listar os arquivos e pastas do local que você está. Certifique-se que a p
 
       clear : limpa o terminal
 
-- 16 - Agora é hora de abrir com o VSCode (https://code.visualstudio.com/download) utilize o comando:
+- 15 - Agora é hora de abrir com o VSCode (https://code.visualstudio.com/download) utilize o comando:
 
          code .
 
-- 17 - Você pode personalizar o VScode com suas extensões.
+- 16 - Você pode personalizar o VScode com suas extensões.
 
-- 18 - Dicas do VSCode: Ctrl + S = Salvar (fica uma bolinha na aba quando não está salvo, e fica um M quando é salvo).
+- 17 - Dicas do VSCode: Ctrl + S = Salvar (fica uma bolinha na aba quando não está salvo, e fica um M quando é salvo).
 
 # COMO MANDAR AS SUAS CRIAÇÕES/ALTERAÇÕES PRO GITHUB.
 
-- 19 - Use o comando:
+- 18 - Use o comando:
 
          git status
 
 Ele monitora as atividades e te direciona em que etapa do processo você está.
 
-- 20 - Os arquivos em vermelho foram alterados mas não estão inseridos na nuvem, para adiciona-los e atualizar o repositório utilize o comando
+- 19 - Os arquivos em vermelho foram alterados mas não estão inseridos na nuvem, para adiciona-los e atualizar o repositório utilize o comando
 
          git add nome-do-arquivo ou # git add .
 
 (esse ultimo é pra colocar todas as pastas e alterações de uma vez).
 
-- 21 - Para retirar os arquivos utilize o comando
+- 20 - Para retirar os arquivos utilize o comando
 
          git restore --staged nome-do-arquivo ou # git restore --staged .
 
-- 22 - Agora é hora de comentar suas alterações, utilize o comando
+- 21 - Agora é hora de comentar suas alterações, utilize o comando
 
          git commit -m "mensagem que deseja"
 
 Uma boa prática de mercado é falar a mensagem na terceira pessoa. Exemplo: "Cria um botão na página inicial".
 
-- 23 - Feito o commit agora é hora de enviar para a nuvem, utilize o comando
+- 22 - Feito o commit agora é hora de enviar para a nuvem, utilize o comando
 
          git push
 
